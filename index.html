@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Main page</title>
+
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div>
+            <a class="navbar-brand" id="nav-title" href="index.html">Latitude</a>
+            </div>
+        </div>    
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">                
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temperature.html">Temperature </a></li>
+                        <li><a href="cloudiness.html">Cloudiness </a></li>
+                        <li><a href="wind_speed.html">Windyness </span></a></li>
+                        <li><a href="humidity.html">Humidity </span></a></li>
+                     </ul>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+    <div clas="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1><strong>Summary</strong></h1>
+                <hr>
+                <br/>
+                <p>   
+                <a href="temperature.html"><img style="float: left;" src="Images/Lat_Temp.png"></a>
+                The pourpose of this project was to analyze how weather changes as you 
+                get closer to the equator. To accomplish this goal we first pulled data 
+                from the OpenWeatherMap API, in order to get information about more than
+                500 cities. <br/>
+                After working on the dataset we used Matplotlib to sketch the graphs 
+                showing the relation between different aspects of the weather vs the 
+                Latitude. <br/>
+                Factors tha have been considered are: Temperature, Couldiness, Wind Speed,
+                and Humidity. <br/>
+                This site provide all the information needed to go over our analysis, 
+                like explanation, graphs and data.
+            </p>
+            </div>
+            <div class="col-md-4">
+                <h1><strong>Visualization</strong></h1>
+                <hr>
+                <div class = "container">
+                    <div class="row">
+                        <div class="col-md-2">
+                                    
+                            <h6>vs Max Temperature</h6>
+                            <div style="width:145px;height:145px;">
+                            <a href="temperature.html"> <img src="Images/Lat_Temp.png" height="140" width="140"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>vs Humidity</h6>
+                            <a href="humidity.html"><img src="Images/Lat_Hum.png" height="140" width="140"></a>
+                        </div>
+                    </div>     
+                    <br/> 
+                    <div class="row">
+                        <div class="col-md-2">
+                        <h6> vs Cloudiness</h6> 
+                        <a href="cloudiness.html"><img src="Images/Lat_Cloud.png" height="140" width="140"></a>
+                        </div>
+                        <div class="col-md-2">
+                        <h6>vs Wind Speed</h6>
+                        <a href="wind_speed.html"><img src="Images/Lat_Wind.png" height="140" width="140"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body> 
+</html>   
